@@ -33,6 +33,15 @@ Python 2.7.3, WikidPad
 First, download the WikidPad source to a location on your system. Then extract
 it to a spot where it will live permanently, I suggest: `/opt/WikidPad`.
 
+There is a known issue under linux where WikidPad can't find some modules that
+are correctly included in the source, but not correctly imported. All you need
+to do is create symlinks to the package root and all will be OK.
+
+    cd /opt/WikidPad
+    ln -s lib/gadfly
+    ln -s lib/pwiki
+    ln -s lib/whoosh
+
 Next, download this package and extract it to a temporary location. In a
 terminal, go to that location and if you have python installed:
 
@@ -43,7 +52,7 @@ terminal, go to that location and if you have python installed:
 If you don't like to muddy up your `dist-packages`
 folder, feel free just to sym-link from the downloaded package into your
 `/usr/local/bin` folder. I do this sometimes to make it easy to continue to edit
-my scripts.
+my scripts while still having access to them in my standard path.
 
 `sudo ln -s /wherever/you/put/scripts/wikidpad-utils/bin/wikidpad /usr/local/bin`
 
