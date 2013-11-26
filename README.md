@@ -76,19 +76,19 @@ put it there instead.
     > `~/.local/share/applications/assogiate.desktop` from a terminal and make
     > `Hidden=false`. Why this is on by default eludes me.
 
-![Image](resources/Assogiate-01.png)
+![Image](static/Assogiate-01.png)
 
 * create new mime-type
 
-![Image](resources/Assogiate-02.png)
+![Image](static/Assogiate-02.png)
 
 * Fill out the type information
 
-![Image](resources/Assogiate-03.png)
+![Image](static/Assogiate-03.png)
 
 * Filename extension
 
-![Image](resources/Assogiate-04.png)
+![Image](static/Assogiate-04.png)
 
 * leave the other two tabs empty
 
