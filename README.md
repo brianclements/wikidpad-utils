@@ -124,7 +124,7 @@ The most recent version will always be the `master` branch here on GitHub.
 
 ## License
 wikidpad-utils is licensed under the MIT license. See the
-[LICENSE](LICENSE-MIT.md) file.
+[LICENSE](LICENSE-MIT) file.
 
 ## Credits
 For a list of contributers, see the [AUTHORS](AUTHORS.md) file.
