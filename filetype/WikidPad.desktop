@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=WikidPad
+Comment=Click here to start WikidPad
+Exec=wikidpad
+Icon=/opt/WikidPad/icons/pwiki.ico
+Terminal=false
+Hidden=false
+Type=Application
+Categories=Application
+MimeType=text/wiki
+StartupNotify=true
