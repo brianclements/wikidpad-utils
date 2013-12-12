@@ -49,12 +49,12 @@ terminal, go to that location and if you have python installed:
 `/usr/local/lib/python2.7/dist-packages` folder and the script to your
 `/usr/local/bin` folder.
 
-If you don't like to muddy up your `dist-packages`
-folder, feel free just to sym-link from the downloaded package into your
-`/usr/local/bin` folder. I do this sometimes to make it easy to continue to edit
-my scripts while still having access to them in my standard path.
+If you don't like to muddy up your `dist-packages` folder, feel free just to
+sym-link the script from the downloaded package into your `/usr/local/bin`
+folder. I do this sometimes to make it easy to continue to edit my scripts while
+still having access to them in my standard path.
 
-`sudo ln -s /wherever/you/put/scripts/wikidpad-utils/bin/wikidpad /usr/local/bin`
+`sudo ln -s /wherever/you/put/scripts/wikidpad-utils/scripts/wikidpad /usr/local/bin`
 
 So this now allows your standard terminal use. Running `wikidpad` in the
 terminal will launch the program as you would expect, and appending a filepath
