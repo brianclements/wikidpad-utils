@@ -1,0 +1,57 @@
+#!/usr/bin/python
+##----------------
+##Name:         wikidpad
+##Description:  proper linux argument support for wikidpad
+##Date:
+##Version:      0.0.1-dev
+##Requirements: python 2.7.3,
+##----------------
+
+# WikidPad Options:
+
+# -h, --help: Show this message box
+# -w, --wiki  <wiki path>: set the wiki to open on startup
+# -p, --page  <page name>: set the page to open on startup
+# -x, --exit: exit immediately after performing command line actions
+# --export-what <what>: choose if you want to export page, subtree or wiki
+# --export-type <type>: tag of the export type
+# --export-dest <destination path>: path of destination directory for export
+# --export-saved <name of saved export>: alternatively name of saved export to
+#   run
+# --export-compfn: Use compatible filenames on export
+# --continuous-export-saved <name of saved export>: continuous export to start
+#   with
+# --rebuild: rebuild the Wiki database
+# --no-recent: Do not record opened wikis in recently opened wikis list
+# --preview: If no pages are given, all opened pages from previous session
+        # are opened in preview mode. Otherwise all pages given after that
+        # option are opened in preview mode.
+# --editor: Same as --preview but opens in text editor mode.
+
+import sys
+from subprocess import call
+
+
+def main(argv):
+    launcher = 'python'
+    path = '/opt/WikidPad/WikidPad.py'
+    args = argv[1:]
+
+    execute = []
+    if len(args) > 0:
+        if args[0] in ['-h']:
+            execute.append(args[0])
+            execute.append('-x')
+        elif args[0] in ['--wiki']:
+            execute.append(args[0])
+            execute.append(args[1])
+        else:
+            execute.append(args[0])
+
+    execute.insert(0, path)
+    execute.insert(0, launcher)
+
+    call(execute)
+
+if __name__ == '__main__':
+    main(sys.argv)
