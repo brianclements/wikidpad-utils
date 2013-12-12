@@ -87,7 +87,7 @@ config = {
     'author_email': 'brian@brianclements.com',
     # Manually Entered
     'test_suite': '',
-    'scripts': ['bin/wikidpad'],
+    'scripts': ['scripts/wikidpad'],
     'keywords': 'wikidpad launcher',
 }
 
